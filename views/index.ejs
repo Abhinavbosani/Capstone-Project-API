@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><%= content %></h1>
+        <div class="form-container">
+            <h2>Select Category</h2>
+            <form id="myForm" method="post">
+                <div>
+                    <input type="checkbox" id="custom1" name="categories" value="Programming">
+                    <label for="custom1">Programming</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="custom2" name="categories" value="Miscellaneous">
+                    <label for="custom2">Miscellaneous</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="custom3" name="categories" value="Dark">
+                    <label for="custom3">Dark</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="custom4" name="categories" value="Pun">
+                    <label for="custom4">Pun</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="custom5" name="categories" value="Spooky">
+                    <label for="custom5">Spooky</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="custom6" name="categories" value="Christmas">
+                    <label for="custom6">Christmas</label>
+                </div>
+                <input id="joke" type="submit" value="Get Joke" formaction="/getJoke">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
